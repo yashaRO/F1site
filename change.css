@@ -1,8 +1,14 @@
-div {
+#standard {
 	height:50px;
 	width:100%;
 	background-color:black;
 	text-align: center;
+}
+#image {
+	background-color:none;
+	height:350px;
+	margin-left:auto;
+	margin-right:auto;
 }
 body {
 	padding:0;
@@ -10,6 +16,9 @@ body {
 }
 table {
 	height:50px;
+	margin-left:30%;
+	margin-right:30%;
+	text-align:center;
 }
 th {
 	color:#2D6784;
@@ -19,4 +28,17 @@ th {
 a {
 	color:#2D6784;
 	text-decoration:none;
+}
+#demo1, #demo2 {
+	color:red;
+	font-size:40px;
+}
+.game {
+	margin-top: 1cm;
+}
+#text {
+	background-color:#3FE272;
+	margin-left:17cm;
+	margin-right:17cm;
+	opacity:.5;
 }
