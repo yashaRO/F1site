@@ -37,8 +37,6 @@ a {
 	margin-top: 1cm;
 }
 #text {
-	background-color:#3FE272;
-	margin-left:17cm;
-	margin-right:17cm;
-	opacity:.5;
+	background: rgba(0,0,0,.5);
+	
 }
