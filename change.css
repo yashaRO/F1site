@@ -20,7 +20,7 @@ table {
 	margin-right:30%;
 	text-align:center;
 }
-th {
+th, #round {
 	color:#2D6784;
 	font-size:40px;
 	font-family:Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
@@ -39,4 +39,12 @@ a {
 #text {
 	background: rgba(0,0,0,.5);
 	
+}
+.tryout {
+	height:210px;
+	width:150px;
+}
+.card {
+	position:center;
+	width:600px;
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type = 'text/css' rel = 'stylesheet' href = '../change.css'/>
+		<script type = 'text/javascript' src = '../jquery-3.1.0.min.js'></script>
+		<script type = 'text/javascript' src = '../Base.js'></script>
+		<title>Fight The Dragon</title>
+	</head>
+	<body background = "../Violetleaves.jpg">
+		<div id = 'standard'>
+			<table style="width:45%">
+				<tr>
+					<th><a href = '../Base.html'>Bio&nbsp&nbsp</a></th>
+					<th><a href = "../Musictab.html">Music</a></th>
+					<th><a href = '../Dragon.html'>Dragon</a></th>
+					<th><a href = 'SBlackJack.html'>BlackJack</a></th>
+				</tr>
+			</table>
+			<center><b id = 'round'>Round X</b></center>
+		<center><div class ='card'></div></center>
+		<center><table style='width:30%'>
+			<tr>
+				<th>Round Score</th>
+				<th>Game Score</th>
+			</tr>
+			<tr>
+				<th id = 'rScore'>0</th>
+				<th id = 'gScore'>100</th>
+			</tr>
+		</table></center>
+		<button class = 'game' id='hit' onclick = 'hit()'>Start</button>
+		<button class = 'game' onclick = 'stand()'>Stand</button>
+		<button class = 'game' onclick = 'reset()'>Reset</button>
+		<br> <button class = 'game' onclick = 'reset()'>Reset</button>	
+		<script src = 'SBJ.js'></script>
+		<table style='width:40%' id = 'text'>
+		<tr>	<td id = 'demo1'>You have five rounds to</td>
+		</tr>
+		<tr><td id = 'demo2'>get to the game score! </td></tr>
+		</table>
+		</div>
+	</body>
+</html>
