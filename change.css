@@ -1,0 +1,53 @@
+#standard {
+	height:50px;
+	width:100%;
+	background-color:black;
+	text-align: center;
+}
+#image {
+	background-color:none;
+	height:350px;
+	margin-left:auto;
+	margin-right:auto;
+}
+body {
+	padding:0;
+	margin:0;
+}
+p, li {
+	font-size:30px;
+}
+table {
+	height:50px;
+	margin-left:30%;
+	margin-right:30%;
+	text-align:center;
+}
+th, #round {
+	color:#2D6784;
+	font-size:40px;
+	font-family:Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+a {
+	color:#2D6784;
+	text-decoration:none;
+}
+#demo1, #demo2 {
+	color:red;
+	font-size:40px;
+}
+.game {
+	margin-top: 1cm;
+}
+#text {
+	background: rgba(0,0,0,.5);
+	
+}
+.tryout {
+	height:210px;
+	width:150px;
+}
+.card {
+	position:center;
+	width:600px;
+}
