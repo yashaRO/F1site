@@ -15,13 +15,12 @@ var heal = function() {
     var health = Math.round(Math.random()*5 + k);
     this.human += health;
 	Heal -= 1;
-	document.getElementById('demo1').innerHTML = "You have healed " + health + " points. Your health is now " + human;
-	document.getElementById('demo2').innerHTML = person + ": " + human + " Yasha: " + dragon;
+	document.getElementById('demo1').innerHTML = "You have healed " + health + " points. The dragon is charging up!" ;
+	document.getElementById('demo2').innerHTML = person + ": " + human + " Dragon: " + dragon;
 };
 var fight = function() {
 	if (gameover) {return;}
 	if (!person) {person = prompt("What is your name")}
-	if (person.toLowerCase() == 'corbin') {document.getElementById('demo1').innerHTML = "You don't fight. You lost. Fuck out of here Seymour."}
     var hit = [Math.round(Math.random() + .15),Math.round(Math.random() + .15)];
     if (hit[0]) {
         if (Math.round(Math.random() - .9)) {
@@ -41,7 +40,9 @@ var fight = function() {
 		}
         else {this.human -= 15}
 	}
-	if (dragon  < 1 & human < 1) {human = 0; dragon = 0; document.getElementById('demo1').innerHTML = "Wait,"; document.getElementById('demo2').innerHTML = "What?"; return;}
+	if (dragon  < 1 & human < 1) {human = 0; dragon = 0; document.getElementById('demo1').innerHTML = "Wait,"; document.getElementById('demo2').innerHTML = "What?";
+		document.getElementById('dragon').src = 'dead_dragon_soldier.jpg'; 
+		return;}
 	else if (dragon < 1) {
 		gameover = 1; dragon = 0; scoreH += 1;
 		document.getElementById('score1').innerHTML = scoreH;
@@ -54,9 +55,9 @@ var fight = function() {
 		document.getElementById('demo1').innerHTML = 'The hero has fallen! Try again?'; 
 		document.getElementById('dragon').src = "hero_die.gif"
 		};
-	document.getElementById('demo2').innerHTML = person + ": " + human + " Yasha: " + dragon;
+	document.getElementById('demo2').innerHTML = person + ": " + human + " Dragon: " + dragon;
 };
-var reset = function() {human = 50; dragon = 100; Heal = 2; person = null; gameover = 0;
+var reset = function() {human = 50; dragon = 100; Heal = 2; gameover = 0;
 	document.getElementById('dragon').src = "dragon_sleep.jpg"}
 var resetScore = function() {
 	scoreD = 0; scoreH = 0;
