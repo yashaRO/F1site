@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type = 'text/css' rel = 'stylesheet' href = 'change.css'/>
+		<script type = 'text/javascript' src = 'jquery-3.1.0.min.js'></script>
+		<script type = 'text/javascript' src = 'Base.js'></script>
+		<title>Fight The Dragon</title>
+	</head>
+	<body background = "Violetleaves.jpg">
+		<div id = 'standard'>
+			<table style="width:45%">
+				<tr>
+					<th><a href = 'Base.html'>Bio&nbsp&nbsp</a></th>
+					<th><a href = "RPS.html">Music</a></th>
+					<th><a href = 'Dragon.html'>Dragon</a></th>
+					<th><a href = 'Blackjack/SBlackJack.html'>BlackJack</a></th>
+				</tr>
+			</table>
+		<div id ='image'><img id = 'dragon' src = 'dragon_sleep.jpg'/></div>
+		<center><table style='width:30%'>
+			<tr>
+				<th>Human</th>
+				<th>Dragon</th>
+			</tr>
+			<tr>
+				<th id = 'score1'>&nbsp </th>
+				<th id = 'score2'>&nbsp </th>
+			</tr>
+		</table></center>
+		<button class = 'game' onclick = 'fight()'>Fight!</button>
+		<button class = 'game' onclick = 'heal()'>Heal!</button>
+		<button class = 'game' onclick = 'reset()'>Reset</button>
+		<br> <button class = 'game' onclick = 'resetScore()'>Score Reset</button>
+		<script src = 'fight the dragon.js'></script>
+		<table style='width:40%' id = 'text'>
+		<tr>
+			<td id = 'demo1'>Ready to fight the dragon?</td>
+		</tr>
+		<tr><td id = 'demo2'>&nbsp </td></tr>
+		</table>
+		</div>
+	</body>
+</html>

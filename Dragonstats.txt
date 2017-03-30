@@ -1,8 +1,0 @@
-50 life vs 100 life
-2 health = 10pts/e
-dragon attack = 15 65%
-crit = 35 (5% chance)
-your attack = 20 65%
-crit = 40 (10% chance)
-p.heal 10-15 15-20 (20%)
-d.charge = crit 40%

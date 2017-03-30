@@ -1,0 +1,91 @@
+html {
+	height: 100%;
+	margin: 0px;
+}
+body {
+  background-image: url('../images/bodyb4.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: black;
+	height: 100%;
+}
+p {
+	text-indent: 50px;
+	font-size: 16px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+#jumbotext {
+	color: white;
+}
+.firafont {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-weight: 550;
+	font-size: 40px;
+}
+#bioImage {
+  border-radius: 20px;
+	height: 560px;
+	width: 400px;
+}
+#bioText {
+  height: 540px;
+	border-radius: 20px;
+	background-color: rgba(0, 60, 110, .55);
+}
+.card {
+	overflow-y: auto;
+}
+.card-title {
+	text-align: center;
+}
+.card-title > strong {
+	font-size: 40px;
+}
+.card-content > p {
+	background-color: rgba(0, 60, 110, .55)
+}
+::-webkit-scrollbar { width: 6px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666;}
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #666;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #ffffff; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}.card::-webkit-scrollbar { width: 6px; height: 3px;}
+
+@media only screen and (min-width: 993px) {
+	#try {
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 992px) {
+	
+  body {
+  	background-image: url('../images/bodyb3.jpg');
+	}
+	#bioImage {
+		min-height: 357px !important;
+		max-height: 357px !important;
+		min-width: 255px !important;
+		max-width: 255px !important;
+	}
+	#bioText {
+		height: 300px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 400px) {
+	
+	#bioImage {
+		height: 245px;
+		width: 175px;		
+	}
+	#bioText {
+		height: 300px;
+	}
+	.card-title > strong {
+		font-size: 20px;
+	}
+}
