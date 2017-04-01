@@ -9,6 +9,21 @@ body {
 	background-repeat: no-repeat;
 	background-color: black;
 	height: 100%;
+	vertical-align: 
+}
+.topPage {
+/*	height: 63%;*/
+	overflow: auto;
+	flex-wrap: wrap;
+	display:flex;
+}
+#lolo {
+	font-size: 50px;
+	color: red;
+	font-weight: bold;
+}
+.card {
+	border-radius: 10px;
 }
 p {
 	text-indent: 50px;
