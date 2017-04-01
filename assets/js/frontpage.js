@@ -37,9 +37,9 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		normalScrollElements: '#bioText, .topPage'
 	});
-	var i = 0
+	
 	$.each(projects, function(index, value) {
-		console.log(i++)
+		
 		$('.topPage').append(
 			`<a class='col s6 m4 l3' href='${value.site}'>
    	    <div class='card small'>
@@ -53,17 +53,6 @@ $(document).ready(function() {
    	    </div>
     	</a>`
 		)
-		console.log(`<a class='col s6 m4 l3' href='${value.site}'>
-   	    <div class='card small'>
-   	    	<div class='card-image'>
-   	    		<img src='${value.image}'>
-   	    		<span class='card-title'>${value.name}</span>
-   	    	</div>
-   	    	<div class='card-content'>
-   	    		${value.description}
-   	    	</div>
-   	    </div>
-    	</a>`)
 	})
 	
 });
