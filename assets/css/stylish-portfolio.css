@@ -1,0 +1,301 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio (https://startbootstrap.com/template-overviews/stylish-portfolio)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+ */
+
+/* Global Styles */
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#headerbg {
+	background-color: rgba(0, 0, 0, 0.46);
+	color: white;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.btn-light {
+  color: #333;
+  border: none;
+  border-radius: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #333;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+.card-block p {
+	font-size: 20px;
+}
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+  max-width: 100px;
+}
+
+.toggle {
+  font-size: 1em;
+  margin: 5px 5px 0 0;
+  padding: 15px 20px;
+}
+
+
+/* Header */
+
+.header {
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bodyb4.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* About */
+
+.about {
+  padding: 50px 0;
+}
+
+
+/* Services */
+
+.services {
+  padding: 20px 0 50px 0;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+.bg-primary {
+	background-color: #319fff!important
+}
+#projectsHead {
+	color: black;
+	font-weight: bolder;
+}
+#projectsSub {
+	color: black;
+	font-weight: bold;
+}
+
+#bioImage {
+	border-style: solid;
+  border-radius: 20px;
+	height: 560px;
+	width: 400px;
+}
+
+#bioText {
+  height: 560px;
+	border-radius: 20px;
+	background-color: rgba(0, 60, 110, .55);
+	overflow-y: auto
+}
+
+/* Callout */
+
+.callout {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  background: url(../img/callout.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+  padding: 50px 0;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+}
+
+.img-portfolio:hover {
+  opacity: .8;
+}
+
+
+/* Call to Action */
+
+.call-to-action {
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+@media(max-width:768px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 10px 0;
+	background-color: rgba(0, 0, 0, 1);
+	color:white;
+}
+
+#to-top {
+  font-size: 1em;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  display: none;
+  padding: 15px 20px;
+}
+#postsCarousel a {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+	
+	#bioImage {
+		min-height: 357px !important;
+		max-height: 357px !important;
+		min-width: 255px !important;
+		max-width: 255px !important;
+	}
+	#bioText {
+		height: 300px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+  	background: url(../img/bodyb3.jpg) no-repeat center center scroll;
+	}
+	.portf {
+		padding: 10px;
+	}
+	.carousel-inner {
+		margin-left: 15px;
+	}
+	#menu-toggle {
+		margin-right: 10px;
+	}
+	#bioImage {
+		min-height: 350px;
+		max-height: 350px;
+		min-width: 230px;
+		max-width: 230px;
+	}
+	#bioText {
+		max-height: 360px;
+		min-height: 360px;
+	}
+	
+}
+
+@media only screen and (max-width: 400px) {
+	
+	#bioImage {
+		height: 245px;
+		width: 175px;		
+	}
+	#bioText {
+		height: 300px;
+	}
+	.card-title > strong {
+		font-size: 20px;
+	}
+}
